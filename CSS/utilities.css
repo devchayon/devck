@@ -1,0 +1,54 @@
+.flex {
+    display: flex;
+}
+
+.item-center {
+    align-items: center;
+}
+
+.justifu-center {
+    justify-content: center;
+}
+
+.justifu-between {
+    justify-content: space-between ;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.btn {
+    padding: 0.5rem 3rem;
+    border: none;
+    border-radius: 3rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    background: rgb(30, 247, 247);
+    color: rgba(33, 32, 37, 1);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: rgba(30, 247, 247, 0.7);
+}
+
+.btn-secod {
+    background-color: transparent;
+    color: rgb(30, 247, 247);
+    border-color: rgb(30, 247, 247);
+    padding: 1rem 3rem;
+    transition: all 0.3s ease;
+}
+
+.btn-secod:hover {
+    background-color: rgba(30, 247, 247);
+    color: rgba(33, 32, 37, 1);
+}

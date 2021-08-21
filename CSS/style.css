@@ -1,0 +1,624 @@
+@import "utilities.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialised;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Manrope", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* nav bar */
+
+header {
+  background-color: rgb(33, 32, 37);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 84%, 0 100%);
+}
+
+.container {
+  max-width: 75%;
+  padding: 0 1.2rem;
+  margin: 0 auto;
+}
+
+header li,
+a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  list-style: none;
+}
+
+#logo {
+  margin-right: 7rem;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 0;
+}
+
+header nav {
+  padding: 1rem 0;
+}
+header nav a {
+  margin: 0 1.5rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+header nav a:hover {
+  color: rgba(30, 247, 247, 1);
+}
+
+/* Hero section */
+
+.hero {
+  padding: 3rem 0;
+}
+
+.hero img {
+  margin-bottom: -0.5rem;
+  width: 35rem;
+}
+
+.hero .right-side {
+  color: white;
+}
+
+.hero h6 {
+  font-size: 2rem;
+  color: rgba(30, 247, 247, 1);
+  margin-bottom: 0.8rem;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 100;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.hero h1 span {
+  color: rgba(30, 247, 247, 1);
+}
+
+.hero p {
+  font-size: 1.6rem;
+  line-height: 2;
+  margin-bottom: 1.5rem;
+}
+
+.hero .right-side {
+  margin-top: -6rem;
+}
+
+/* section */
+
+section {
+  padding: 8rem 0;
+}
+
+section .about-me-img {
+  height: 35rem;
+}
+
+.about h1 {
+  color: black;
+  font-size: 3.7rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.about h1 span {
+  color: rgb(6, 170, 170);
+}
+
+section h3 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  font-size: 1.8rem;
+  margin-bottom: 2.2rem;
+  line-height: 2.3rem;
+  color: rgb(107, 107, 107);
+}
+
+.social-media {
+  display: flex;
+}
+
+section a img {
+  height: 4rem;
+}
+
+.social-media a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.5rem;
+}
+
+/* Grid card section */
+
+.seaction-heading {
+  color: #070606;
+  text-align: center;
+  margin-bottom: 2rem;
+  line-height: 1rem;
+}
+
+.container .seaction-heading {
+  font-size: 3rem;
+}
+
+.seaction-heading span {
+  color: rgb(6, 170, 170);
+}
+
+.services-p {
+  color: rgb(107, 107, 107);
+  font-size: 1.5rem;
+  margin-bottom: 12rem;
+  text-align: center;
+}
+
+section.servies {
+  background: rgb(240, 240, 240);
+}
+
+section.servies .card-warpper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2.5rem;
+  grid-row-gap: 8rem;
+}
+
+section.servies .card {
+  background: white;
+  padding: 3rem 2rem;
+  position: relative;
+  padding-top: 5rem;
+  transition: all 0.3s ease;
+}
+
+section.servies .card:hover {
+  background: rgba(33, 32, 37, 1);
+  color: white;
+}
+
+section.servies .card img {
+  height: 8rem;
+  background: rgb(6, 170, 170);
+  padding: 1rem;
+  position: absolute;
+  top: -5.5rem;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+section.servies .card h2 {
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+section.servies .card p {
+  font-weight: 300;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+/* freelancer */
+
+section.freelancer {
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../Images/itachi.jpg);
+  color: white;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 80%, 0 100%);
+  padding-bottom: 15rem;
+  background-position: center;
+}
+
+section.freelancer h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+section.freelancer p {
+  margin-bottom: 1.2rem;
+  font-size: 1.2rem;
+}
+
+/* reviews */
+
+.reviews-p {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+section.reviews .slider .slide img {
+  width: 10rem;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+section.reviews .slider .slide {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 10rem;
+}
+
+section.reviews .slider .slide p {
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+
+section.reviews .slider .slide span {
+  font-size: 1.2rem;
+}
+
+section.reviews .slider-dots .slick-dots {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+section.reviews .slider-dots {
+  margin-top: 3rem;
+}
+
+section.reviews .slider-dots button {
+  font-size: 0;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.7rem;
+  border: none;
+  outline: none;
+  background: #070606;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+section.reviews .slider-dots li.slick-active button {
+  background: rgb(6, 170, 170);
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+}
+
+/* Work */
+.work-p {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+section.work {
+  background: rgb(240, 240, 240);
+}
+
+/* section.work .card {
+    margin: 0 auto;
+} */
+
+section.work img {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+section.work .card-warpper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+
+section.work .card-warpper .card {
+  position: relative;
+}
+
+section.work .card-warpper .card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 99%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(6, 170, 170);
+  font-size: 1.5rem;
+  border: none;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+section.work .card-warpper .card .overlay a {
+  color: rgb(240, 240, 240);
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+section.work .card-warpper .card:hover .overlay {
+  opacity: 1;
+}
+
+/* blog */
+
+.blog-p {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 4rem;
+  color: white;
+}
+
+section.blog {
+  background: rgb(33, 32, 37);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 69% 89%, 0 100%);
+  padding-bottom: 16rem;
+}
+
+section.blog .seaction-heading {
+  color: white;
+}
+
+section.blog .card-warpper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+}
+
+section.blog .card-warpper img {
+  width: 100%;
+  height: 100%;
+}
+
+section.blog .card {
+  background: white;
+}
+
+section.blog .card .card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 1.1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+section.blog .card .card-content h1 {
+  color: black;
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+section.blog .card .card-content span {
+  color: lightgray;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+section.blog .card .card-content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+section.blog .card .card-content a.read {
+  color: black;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+section.blog .card .card-content a.read:hover {
+  color: rgb(6, 170, 170);
+}
+
+section.blog .card .card-content h1:hover {
+  color: rgb(6, 170, 170);
+}
+
+/* Contact */
+
+section.contact .contact-p {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 4rem;
+}
+
+section.contact .card-warpper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+}
+
+section.contact .card-warpper .card {
+  text-align: center;
+}
+
+section.contact .card-warpper .card img {
+  width: 6rem;
+  margin-bottom: 2rem;
+}
+
+section.contact .card h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+section.contact .card h6 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: gray;
+  margin-bottom: 4rem;
+}
+
+section.contact .input-warp {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+section.contact .input-warp-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+section.contact input {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border: 1px solid gray;
+}
+
+section.contact .input-warp-2 input {
+  margin-bottom: 1.5rem;
+}
+
+section.contact .input-warp-2 textarea {
+  padding: 0.5rem;
+  font-size: 1.6rem;
+  border: 1px solid gray;
+  resize: none;
+}
+
+section.contact input:focus,
+section.contact textarea:focus {
+  outline: none;
+}
+
+section.contact .btn-warpper {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+/* Footer */
+
+footer {
+  background: rgba(33, 32, 37, 1);
+  text-align: center;
+  padding: 4rem 0;
+}
+
+footer img {
+  width: 3rem;
+}
+
+footer h1 {
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  color: white;
+  font-weight: 5x00;
+}
+
+footer .footer-social a {
+  margin: 0 1rem;
+  margin-bottom: 3.2rem;
+}
+
+footer .Copyright {
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* responsive */
+
+@media (max-width: 1030px) {
+   header #main-nav {
+    display: none;
+   }
+}
+
+.site-main-wrapper {
+    position: relative;
+}
+
+.site-main-wrapper .hamburger {
+    position: absolute;
+}
+
+@media (max-width: 1030px) {
+    .site-main-wrapper .hamburger {
+      position: absolute;
+      top: 2rem;
+      right: 3rem;
+      z-index: 11;
+      background: none;
+      border: none;
+      cursor: pointer;
+  }
+}
+
+
+.site-main-wrapper .hamburger img {
+    width: 4rem;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  background: lightgray;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  padding-top: 5rem;
+  transform: translateX(-100%);
+  transition: all .5s ease-in-out;
+}
+
+.open {
+  transform: translateX(0);
+}
+
+.cancel {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.cancel img {
+  width: 4rem;
+}
+
+.mobile-nav ul {
+  list-style: none;
+}
+
+.mobile-nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.mobile-nav ul li {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+/* full site responsive */
