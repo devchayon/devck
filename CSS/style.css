@@ -569,16 +569,17 @@ footer .Copyright {
 }
 
 .mobile-nav {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  z-index: 1001;
+  z-index: 0;
+  /* z-index: 1001; */
   background: lightgray;
   width: 100%;
   height: 100%;
   padding: 2rem;
   padding-top: 5rem;
-  transform: translateX(+100%);
+  transform: translateX(-100%);
   transition: all .3s ease-in-out;
 }
 
@@ -593,6 +594,7 @@ footer .Copyright {
 
 .open {
   transform: translateX(0);
+  z-index: 1001;
 }
 
 .cancel {
