@@ -63,7 +63,7 @@ header nav a:hover {
 
 .hero img {
   margin-bottom: -0.5rem;
-  width: 35rem;
+  width: 50rem;
 }
 
 .hero .right-side {
@@ -677,7 +677,7 @@ footer .Copyright {
    display: none;
   }
   .hero img {
-    width: 29rem;
+    width: 40rem;
   }
 
   .hero h1 {
@@ -721,6 +721,9 @@ footer .Copyright {
 /* Phones */
 
 @media (max-width: 576px) {
+  .hero image {
+    width: 100px;
+  }
   .hero {
     flex-direction: column;
   }
